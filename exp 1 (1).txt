@@ -1,0 +1,17 @@
+mysql> create table student (Regno int(3),Name char(15),gender char(1),Dob int(10),mobileno int(10),city char(10));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc student
+    ->
+    -> ;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| Regno    | int(3)   | YES  |     | NULL    |       |
+| Name     | char(15) | YES  |     | NULL    |       |
+| gender   | char(1)  | YES  |     | NULL    |       |
+| Dob      | int(10)  | YES  |     | NULL    |       |
+| mobileno | int(10)  | YES  |     | NULL    |       |
+| city     | char(10) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
