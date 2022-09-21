@@ -1,0 +1,17 @@
+mysql> alter table faculty add dept char(10);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc faculty;
++-----------+----------+------+-----+---------+-------+
+| Field     | Type     | Null | Key | Default | Extra |
++-----------+----------+------+-----+---------+-------+
+| Facno     | int(3)   | YES  |     | NULL    |       |
+| FacName   | char(15) | YES  |     | NULL    |       |
+| gender    | char(1)  | YES  |     | NULL    |       |
+| Dob       | int(10)  | YES  |     | NULL    |       |
+| mobileeno | int(10)  | YES  |     | NULL    |       |
+| Doj       | int(10)  | YES  |     | NULL    |       |
+| dept      | char(10) | YES  |     | NULL    |       |
++-----------+----------+------+-----+---------+-------+
+7 rows in set (0.02 sec)
