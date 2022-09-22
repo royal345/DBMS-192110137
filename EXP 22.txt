@@ -1,0 +1,38 @@
+mysql> create table bookpublisher(bookid int(45),bookname char(45),author char(45),customer char(45));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc bookpublisher;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| bookid   | int(45)  | YES  |     | NULL    |       |
+| bookname | char(45) | YES  |     | NULL    |       |
+| author   | char(45) | YES  |     | NULL    |       |
+| customer | char(45) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> create table custmor(custmorname char(90),curstorid int(44),custmoraddress char(80));
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> desc custmor;
++----------------+----------+------+-----+---------+-------+
+| Field          | Type     | Null | Key | Default | Extra |
++----------------+----------+------+-----+---------+-------+
+| custmorname    | char(90) | YES  |     | NULL    |       |
+| curstorid      | int(44)  | YES  |     | NULL    |       |
+| custmoraddress | char(80) | YES  |     | NULL    |       |
++----------------+----------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+mysql> insert into custmor values('ramayana',333,'nellore'),('DBMS',66,'saveetha nagar');
+Query OK, 2 rows affected (0.02 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select * from custmor;
++-------------+-----------+----------------+
+| custmorname | curstorid | custmoraddress |
++-------------+-----------+----------------+
+| ramayana    |       333 | nellore        |
+| DBMS        |        66 | saveetha nagar |
++-------------+-----------+----------------+
+2 rows in set (0.02 sec)
